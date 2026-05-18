@@ -1,253 +1,304 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOUND2LIGHT - Профессиональное звуковое, световое оборудование и экраны</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOUND2LIGHT — Звук · Экран · Свет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Навигация -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
-                <img src="assets/logo/logo.png" alt="SOUND2LIGHT" class="navbar-logo me-2">
-                SOUND2LIGHT
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#equipment">Оборудование</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#order">Заказ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
-                </ul>
-            </div>
+
+<nav id="nav">
+  <a href="#"><img src="assets/logo/logo.png" alt="SOUND2LIGHT" class="nav-logo" /></a>
+  <ul class="nav-links">
+    <li><a href="#about">О нас</a></li>
+    <li><a href="#catalogue">Оборудование</a></li>
+    <li><a href="#gallery">Работы</a></li>
+    <li><a href="#how">Как работаем</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Получить расчёт</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-media"></div>
+  <img src="assets/logo/logo.png" alt="" class="hero-watermark" aria-hidden="true" />
+  <div class="hero-grid"></div>
+
+  <p class="hero-tag">Прокат концертного оборудования</p>
+  <h1 class="hero-title">
+    Профессиональный<br>
+    <span class="outline">звук, свет</span><br>
+    и экраны
+  </h1>
+  <div class="hero-services">
+    <span class="hero-svc">Звук</span>
+    <span class="hero-svc">Экран</span>
+    <span class="hero-svc">Свет</span>
+  </div>
+  <p class="hero-sub">
+    Полное техническое оснащение мероприятий любого масштаба — от клубного вечера до open-air фестиваля. Доставка, монтаж, технический персонал.
+  </p>
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary">Оставить заявку</a>
+    <a href="#catalogue" class="btn-ghost">Каталог</a>
+  </div>
+  <div class="hero-scroll">Листайте вниз</div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item"><span class="dot">●</span> Звуковое оборудование</span>
+    <span class="ticker-item"><span class="dot">●</span> Световые системы</span>
+    <span class="ticker-item"><span class="dot">●</span> LED-экраны и видеостены</span>
+    <span class="ticker-item"><span class="dot">●</span> Сценические конструкции</span>
+    <span class="ticker-item"><span class="dot">●</span> Доставка и монтаж</span>
+    <span class="ticker-item"><span class="dot">●</span> Технический персонал</span>
+    <span class="ticker-item"><span class="dot">●</span> Звуковое оборудование</span>
+    <span class="ticker-item"><span class="dot">●</span> Световые системы</span>
+    <span class="ticker-item"><span class="dot">●</span> LED-экраны и видеостены</span>
+    <span class="ticker-item"><span class="dot">●</span> Сценические конструкции</span>
+    <span class="ticker-item"><span class="dot">●</span> Доставка и монтаж</span>
+    <span class="ticker-item"><span class="dot">●</span> Технический персонал</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-placeholder">ФОТО КОМАНДЫ / ОБОРУДОВАНИЯ</div>
+    <div class="about-bar"></div>
+  </div>
+  <div class="about-text reveal">
+    <p class="section-eyebrow">О компании</p>
+    <h2 class="section-title">Sound.<br>Screen.<br>Light.</h2>
+    <p style="margin-top:1.5rem">
+      SOUND2LIGHT — команда технических профессионалов, которая занимается прокатом и обслуживанием оборудования для мероприятий любого формата и масштаба.
+    </p>
+    <p>
+      Звук, экраны и свет — три ключевых составляющих любого события. Мы закрываем все три направления: от подбора техники до работы специалистов на вашем мероприятии.
+    </p>
+    <div class="stats-row">
+      <div>
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Лет опыта</div>
+      </div>
+      <div>
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Мероприятий</div>
+      </div>
+      <div>
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Единиц техники</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="catalogue">
+  <div class="catalogue-header">
+    <div>
+      <p class="section-eyebrow">Каталог</p>
+      <h2 class="section-title">Оборудование</h2>
+    </div>
+    <p class="catalogue-note">Полный перечень и цены — по запросу. Подберём комплект под ваш формат и бюджет.</p>
+  </div>
+  <div class="catalogue-grid">
+    <div class="cat-card reveal">
+      <span class="cat-icon">🔊</span>
+      <div class="cat-name">Звук</div>
+      <div class="cat-desc">Акустические системы, усилители, микшерные пульты, микрофоны и сценические мониторы.</div>
+      <div class="cat-items">
+        <span class="cat-tag">L-Acoustics</span><span class="cat-tag">d&b audiotechnik</span>
+        <span class="cat-tag">Shure</span><span class="cat-tag">Yamaha</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">01</div>
+    </div>
+    <div class="cat-card reveal">
+      <span class="cat-icon">🖥️</span>
+      <div class="cat-name">Экраны</div>
+      <div class="cat-desc">LED-видеостены, мобильные экраны, медиасерверы и управление контентом в реальном времени.</div>
+      <div class="cat-items">
+        <span class="cat-tag">ROE Visual</span><span class="cat-tag">Barco</span>
+        <span class="cat-tag">Christie</span><span class="cat-tag">Resolume</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">02</div>
+    </div>
+    <div class="cat-card reveal">
+      <span class="cat-icon">💡</span>
+      <div class="cat-name">Свет</div>
+      <div class="cat-desc">Moving heads, LED-панели, стробоскопы, лазеры, атмосферные эффекты и консоли управления.</div>
+      <div class="cat-items">
+        <span class="cat-tag">Robe</span><span class="cat-tag">Chauvet</span>
+        <span class="cat-tag">Martin</span><span class="cat-tag">grandMA</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">03</div>
+    </div>
+    <div class="cat-card reveal">
+      <span class="cat-icon">🏗️</span>
+      <div class="cat-name">Сцена</div>
+      <div class="cat-desc">Модульные подиумы, фермы, рига и крепёжные системы любой сложности.</div>
+      <div class="cat-items">
+        <span class="cat-tag">Global Truss</span><span class="cat-tag">Prolyte</span><span class="cat-tag">Layher</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">04</div>
+    </div>
+    <div class="cat-card reveal">
+      <span class="cat-icon">⚡</span>
+      <div class="cat-name">Электропитание</div>
+      <div class="cat-desc">Генераторы, силовые распределители, кабельные системы и защита от перегрузок.</div>
+      <div class="cat-items">
+        <span class="cat-tag">Pramac</span><span class="cat-tag">Showtec</span><span class="cat-tag">PowerStar</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">05</div>
+    </div>
+    <div class="cat-card reveal">
+      <span class="cat-icon">👨‍🔧</span>
+      <div class="cat-name">Персонал</div>
+      <div class="cat-desc">Звукорежиссёр, световой оператор, видеоинженер, риггер — полное техническое сопровождение.</div>
+      <div class="cat-items">
+        <span class="cat-tag">Монтаж</span><span class="cat-tag">Саппорт</span><span class="cat-tag">Демонтаж</span>
+      </div>
+      <div class="cat-arrow">→</div><div class="cat-number">06</div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-intro reveal">
+    <p class="section-eyebrow">Портфолио</p>
+    <h2 class="section-title">Наши работы</h2>
+    <p>Концерты, корпоративы, фестивали, конференции — фотографии и видео с наших мероприятий появятся здесь.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="g-item" data-label="ФОТО · КОНЦЕРТ"></div>
+    <div class="g-item" data-label="ФОТО · СВЕТ"></div>
+    <div class="g-item" data-label="ФОТО · ЭКРАН"></div>
+    <div class="g-item" data-label="ВИДЕО · SHOWREEL"></div>
+    <div class="g-item" data-label="ФОТО · СЦЕНА"></div>
+  </div>
+</section>
+
+<section id="how">
+  <p class="section-eyebrow reveal">Процесс</p>
+  <h2 class="section-title reveal">Как мы работаем</h2>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div class="step-title">Заявка</div>
+      <div class="step-desc">Позвоните или оставьте заявку. Расскажите о мероприятии, дате и площадке.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <div class="step-title">Расчёт</div>
+      <div class="step-desc">В течение 2 часов подберём оборудование и пришлём коммерческое предложение.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <div class="step-title">Монтаж</div>
+      <div class="step-desc">Бригада приедет заранее, смонтирует и проверит всё оборудование до начала события.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <div class="step-title">Мероприятие</div>
+      <div class="step-desc">Технический специалист остаётся на площадке и оперативно решает любые вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="reveal">
+    <p class="section-eyebrow">Контакты</p>
+    <h2 class="section-title">Свяжитесь<br>с нами</h2>
+    <div class="contact-block">
+      <div class="contact-row">
+        <div class="contact-ico">📞</div>
+        <div>
+          <div class="contact-detail-label">Телефон</div>
+          <div class="contact-detail-val"><a href="tel:+79001234567">+7 (900) 123-45-67</a></div>
         </div>
-    </nav>
-
-    <!-- Главный баннер -->
-    <section id="home" class="hero-section">
-        <div class="container h-100 d-flex align-items-center">
-            <div class="row w-100">
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 class="display-4 fw-bold mb-4">SOUND2LIGHT</h1>
-                    <h2 class="h3 mb-4 text-muted">Профессиональное оборудование: звук, свет и экраны</h2>
-                    <p class="lead mb-4">Полный спектр оборудования для концертов, конференций, выставок и корпоративных мероприятий. Качество, надежность, профессиональная поддержка.</p>
-                    <div>
-                        <a href="#order" class="btn btn-primary btn-lg me-3">Заказать</a>
-                        <a href="#equipment" class="btn btn-outline-primary btn-lg">Каталог</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
-                    <div class="hero-image">
-                        <i class="bi bi-brightness-high"></i>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">✉️</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-val"><a href="mailto:info@sound2light.ru">info@sound2light.ru</a></div>
         </div>
-    </section>
-
-    <!-- Галерея оборудования -->
-    <section id="equipment" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Наше оборудование</h2>
-            <div class="row g-4">
-                <!-- Звуковое оборудование -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="equipment-card">
-                        <div class="equipment-image">
-                            <i class="bi bi-speaker"></i>
-                        </div>
-                        <h4>Звуковые системы</h4>
-                        <p>Профессиональные PA-системы, микрофоны, микшеры и оборудование для звукозаписи.</p>
-                        <ul class="small">
-                            <li>Акустические системы</li>
-                            <li>Микшерные пульты</li>
-                            <li>Микрофоны и мониторы</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Световое оборудование -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="equipment-card">
-                        <div class="equipment-image">
-                            <i class="bi bi-brightness-high"></i>
-                        </div>
-                        <h4>Световые системы</h4>
-                        <p>LED прожекторы, движущиеся головы, стробоскопы, лазеры и системы управления освещением.</p>
-                        <ul class="small">
-                            <li>LED и прожекторы</li>
-                            <li>Движущиеся головы</li>
-                            <li>Лазеры и спецэффекты</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Экраны и видео -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="equipment-card">
-                        <div class="equipment-image">
-                            <i class="bi bi-camera-video"></i>
-                        </div>
-                        <h4>Видеоэкраны</h4>
-                        <p>LED экраны, проекторы, видеостены и системы управления контентом для любых объемов.</p>
-                        <ul class="small">
-                            <li>LED видеостены</li>
-                            <li>Проекторы</li>
-                            <li>Системы контроля</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">💬</div>
+        <div>
+          <div class="contact-detail-label">Мессенджеры</div>
+          <div class="contact-detail-val"><a href="#">WhatsApp</a> &nbsp;·&nbsp; <a href="#">Telegram</a></div>
         </div>
-    </section>
-
-    <!-- Прайс-лист -->
-    <section id="prices" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Прайс-лист</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="price-card">
-                        <h4>Базовый комплект</h4>
-                        <p class="price">от 8 000 ₽/сутки</p>
-                        <ul>
-                            <li>2 колонки + микшер</li>
-                            <li>2 микрофона</li>
-                            <li>Базовое освещение</li>
-                            <li>Кабели и стойки</li>
-                        </ul>
-                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="price-card popular">
-                        <div class="badge bg-danger position-absolute top-0 start-50 translate-middle">Популярный</div>
-                        <h4>Профессиональный</h4>
-                        <p class="price">от 20 000 ₽/сутки</p>
-                        <ul>
-                            <li>Полная PA-система</li>
-                            <li>4+ микрофона</li>
-                            <li>LED светооборудование</li>
-                            <li>Видеопроекция</li>
-                            <li>Поддержка оператора</li>
-                        </ul>
-                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="price-card">
-                        <h4>Full Event</h4>
-                        <p class="price">от 35 000 ₽/сутки</p>
-                        <ul>
-                            <li>Все звуковое оборудование</li>
-                            <li>Полное световое решение</li>
-                            <li>LED видеостены</li>
-                            <li>Системы управления</li>
-                            <li>Техническая поддержка 24/7</li>
-                        </ul>
-                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">📍</div>
+        <div>
+          <div class="contact-detail-label">Адрес</div>
+          <div class="contact-detail-val">г. Москва, ул. Примерная, 12</div>
         </div>
-    </section>
-
-    <!-- Форма заказа -->
-    <section id="order" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Оформить заказ</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form id="orderForm" onsubmit="submitOrder(event)">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Ваше имя</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Телефон</label>
-                            <input type="tel" class="form-control" id="phone" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="eventDate" class="form-label">Дата мероприятия</label>
-                            <input type="date" class="form-control" id="eventDate" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="equipment" class="form-label">Нужное оборудование</label>
-                            <select class="form-select" id="equipment" required>
-                                <option value="">Выберите комплект</option>
-                                <option value="Базовый">Базовый комплект (от 8 000 ₽)</option>
-                                <option value="Профессиональный">Профессиональный (от 20 000 ₽)</option>
-                                <option value="Full Event">Full Event (от 35 000 ₽)</option>
-                                <option value="Другое">Другое (уточню в комментариях)</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="description" class="form-label">Описание мероприятия</label>
-                            <textarea class="form-control" id="description" rows="4"></textarea>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
-                        </div>
-                    </form>
-                    <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
-                        ✓ Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-ico">🕐</div>
+        <div>
+          <div class="contact-detail-label">Режим работы</div>
+          <div class="contact-detail-val">Пн–Вс, 09:00 — 22:00</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- Контакты -->
-    <section id="contacts" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Контакты</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 text-center">
-                    <i class="bi bi-telephone contact-icon"></i>
-                    <h5>Телефон</h5>
-                    <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <i class="bi bi-envelope contact-icon"></i>
-                    <h5>Email</h5>
-                    <p><a href="mailto:info@prosound.ru">info@prosound.ru</a></p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <i class="bi bi-geo-alt contact-icon"></i>
-                    <h5>Адрес</h5>
-                    <p>Москва, ул. Примера, 123</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center">
-                    <i class="bi bi-clock contact-icon"></i>
-                    <h5>Время работы</h5>
-                    <p>пн-пт: 9:00-18:00<br>сб-вс: 10:00-16:00</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="reveal">
+    <div class="form-title">Оставить заявку</div>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <div class="form-group">
+        <label>Ваше имя</label>
+        <input type="text" id="name" placeholder="Иван Иванов" required />
+      </div>
+      <div class="form-group">
+        <label>Телефон / Email</label>
+        <input type="text" id="phone" placeholder="+7 (___) ___-__-__" required />
+      </div>
+      <div class="form-group">
+        <label>Тип мероприятия</label>
+        <select id="eventType" required>
+          <option value="">— Выберите —</option>
+          <option>Концерт / Open-air</option>
+          <option>Корпоратив</option>
+          <option>Свадьба / Банкет</option>
+          <option>Конференция</option>
+          <option>Клубное мероприятие</option>
+          <option>Другое</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Дата и место</label>
+        <input type="text" id="location" placeholder="15 июля, Москва, Arena" required />
+      </div>
+      <div class="form-group">
+        <label>Комментарий</label>
+        <textarea id="message" placeholder="Опишите мероприятие, количество гостей, пожелания..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Отправить заявку →</button>
+    </form>
+    <div id="successMessage" style="display:none; margin-top: 1rem; padding: 1rem; background: rgba(100, 200, 100, 0.2); border-left: 3px solid #64c864; color: #64c864;">
+      ✓ Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
+    </div>
+  </div>
+</section>
 
-    <!-- Футер -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2024 SOUND2LIGHT. Звук, свет, экраны. Все права защищены.</p>
-        </div>
-    </footer>
+<footer>
+  <img src="assets/logo/logo.png" alt="SOUND2LIGHT" class="footer-logo" />
+  <p class="footer-copy">© 2024 SOUND2LIGHT. Все права защищены.</p>
+  <ul class="footer-links">
+    <li><a href="#">ВКонтакте</a></li>
+    <li><a href="#">Telegram</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
