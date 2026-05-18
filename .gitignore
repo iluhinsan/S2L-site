@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.env.local
+
+# Large media files (upload manually when needed)
+*.mp4
+*.avi
+*.mov
+
+# Local settings
+.env
+config.local.js
+
+# Logs
+npm-debug.log

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSound - Прокат концертного оборудования</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-music-note-beamed"></i> ProSound
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipment">Оборудование</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Заказ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero-section">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="display-4 fw-bold mb-4">ProSound</h1>
+                    <h2 class="h3 mb-4 text-muted">Профессиональный прокат концертного оборудования</h2>
+                    <p class="lead mb-4">Высокое качество звука и света для любых мероприятий. Быстрая доставка, установка и поддержка.</p>
+                    <div>
+                        <a href="#order" class="btn btn-primary btn-lg me-3">Заказать</a>
+                        <a href="#equipment" class="btn btn-outline-primary btn-lg">Каталог</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+                    <div class="hero-image">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея оборудования -->
+    <section id="equipment" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Наше оборудование</h2>
+            <div class="row g-4">
+                <!-- Звуковое оборудование -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="equipment-card">
+                        <div class="equipment-image">
+                            <i class="bi bi-speaker"></i>
+                        </div>
+                        <h4>Звуковые системы</h4>
+                        <p>Мощные PA-системы, микрофоны, микшеры и кабели. От небольших мероприятий до крупных концертов.</p>
+                        <ul class="small">
+                            <li>Профессиональные колонки</li>
+                            <li>Микшерные пульты</li>
+                            <li>Микрофоны</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Световое оборудование -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="equipment-card">
+                        <div class="equipment-image">
+                            <i class="bi bi-brightness-high"></i>
+                        </div>
+                        <h4>Световые системы</h4>
+                        <p>LED прожекторы, движущиеся головы, стробоскопы и системы управления освещением.</p>
+                        <ul class="small">
+                            <li>LED прожекторы</li>
+                            <li>Движущиеся головы</li>
+                            <li>Системы управления</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Сценическое оборудование -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="equipment-card">
+                        <div class="equipment-image">
+                            <i class="bi bi-camera-video"></i>
+                        </div>
+                        <h4>Сценическое оборудование</h4>
+                        <p>Сценические конструкции, кабели, стойки, фоны и системы крепления.</p>
+                        <ul class="small">
+                            <li>Трассы и стойки</li>
+                            <li>Системы крепления</li>
+                            <li>Фоны и драпировка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Прайс-лист -->
+    <section id="prices" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Цены</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-card">
+                        <h4>Базовый комплект</h4>
+                        <p class="price">от 5 000 ₽/сутки</p>
+                        <ul>
+                            <li>2 колонки</li>
+                            <li>Микшер</li>
+                            <li>2 микрофона</li>
+                            <li>Кабели и стойки</li>
+                        </ul>
+                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-card popular">
+                        <div class="badge bg-danger position-absolute top-0 start-50 translate-middle">Популярный</div>
+                        <h4>Стандартный комплект</h4>
+                        <p class="price">от 12 000 ₽/сутки</p>
+                        <ul>
+                            <li>4 колонки</li>
+                            <li>Профессиональный микшер</li>
+                            <li>4 микрофона</li>
+                            <li>Световое оборудование</li>
+                            <li>Сценические конструкции</li>
+                        </ul>
+                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-card">
+                        <h4>Премиум комплект</h4>
+                        <p class="price">от 25 000 ₽/сутки</p>
+                        <ul>
+                            <li>Полная PA-система</li>
+                            <li>Профессиональное светооборудование</li>
+                            <li>Видеопроекция</li>
+                            <li>Сценическое оформление</li>
+                            <li>Техническая поддержка</li>
+                        </ul>
+                        <button class="btn btn-primary mt-3" onclick="scrollToOrder()">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заказа -->
+    <section id="order" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Оформить заказ</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="orderForm" onsubmit="submitOrder(event)">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="eventDate" class="form-label">Дата мероприятия</label>
+                            <input type="date" class="form-control" id="eventDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="equipment" class="form-label">Нужное оборудование</label>
+                            <select class="form-select" id="equipment" required>
+                                <option value="">Выберите комплект</option>
+                                <option value="Базовый">Базовый комплект (от 5 000 ₽)</option>
+                                <option value="Стандартный">Стандартный комплект (от 12 000 ₽)</option>
+                                <option value="Премиум">Премиум комплект (от 25 000 ₽)</option>
+                                <option value="Другое">Другое (уточню в комментариях)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Описание мероприятия</label>
+                            <textarea class="form-control" id="description" rows="4"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
+                        </div>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+                        ✓ Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Контакты</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="bi bi-telephone contact-icon"></i>
+                    <h5>Телефон</h5>
+                    <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="bi bi-envelope contact-icon"></i>
+                    <h5>Email</h5>
+                    <p><a href="mailto:info@prosound.ru">info@prosound.ru</a></p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="bi bi-geo-alt contact-icon"></i>
+                    <h5>Адрес</h5>
+                    <p>Москва, ул. Примера, 123</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="bi bi-clock contact-icon"></i>
+                    <h5>Время работы</h5>
+                    <p>пн-пт: 9:00-18:00<br>сб-вс: 10:00-16:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 ProSound. Прокат концертного оборудования. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
